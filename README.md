@@ -1,3 +1,0 @@
-# Abdulhadi5692HDI2.github.io
-My website for my github profile
-Yeah and I might start a blog....
