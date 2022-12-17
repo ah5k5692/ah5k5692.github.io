@@ -18,6 +18,12 @@
          .content2 a:hover {
           color: #969393;
          }
+		 .special {
+			color: rgb(86, 86, 255);
+			background-color: #9ebee8;
+			text-align: center;
+			font-size: 120%;
+		 }
          .skip-nav {
           background-color: #1a366e;
           color: #fff;
