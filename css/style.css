@@ -24,6 +24,9 @@
 			text-align: center;
 			font-size: 120%;
 		 }
+		 codebl {
+			word-wrap: break-word; white-space: pre-wrap;
+		 }
          .skip-nav {
           background-color: #1a366e;
           color: #fff;
@@ -100,6 +103,6 @@
     b {
         color: white;
     }
-	.dropdown:hover .dropdown-content {
+	.dropdown:active .dropdown-content {
   	display: block;
 	}
