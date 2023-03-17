@@ -1,7 +1,7 @@
 # 17-03-23: So long Eaglercraft.
 Eaglercraft is long gone.
 
-Abdulhadi5692HDI2/eaglercraft (my archived copy) has been DMCA'd effective 03-03-23 by Mojang.
+Abdulhadi5692HDI2/eaglercraft (my archived copy) has been DMCA'd effective 13-03-23 by Mojang.
 
 I've deleted the files. I dont want anything else to do with this stuff.
 
