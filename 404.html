@@ -1,59 +1,41 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!-- 
+     404.html
+     Copyright Abdulhadi5692HDI2 (c)
+	 This website is licenced under MIT
+-->
+<!DOCTYPE html>
 <html>
-
 <head>
-<style>
-a:link			{font:8pt/11pt verdana; color:red}
-a:visited		{font:8pt/11pt verdana; color:#4e4e4e}
-</style>
-<meta HTTP-EQUIV="Content-Type" Content="text-html; charset=Windows-1252">
-<title>Sad 404</title>
+	<style>
+		body {
+			background-image: url("/bg.png");
+		}
+		h1 {
+			font-family: 'Lucida Console',monospace;
+			color: white;
+		}
+		
+		p  {
+			font-family: Arial, Helvetica, sans-serif;
+			color: white;
+		}
+	</style>
+	<title>404!</title>
 </head>
-
-<body bgcolor="white">
-
-<table width="400" cellpadding="3" cellspacing="5">
-  <tr>
-    <td id="tableProps" valign="top" align="left"><img id="pagerrorImg" SRC="err1.bmp"
-    width="25" height="33"></td>
-    <td id="tableProps2" align="left" valign="middle" width="360"><h1 id="textSection1"
-    style="COLOR: black; FONT: 13pt/15pt verdana"><span id="errorText">The page cannot be found</span></h1>
-    </td>
-  </tr>
-  <tr>
-    <td id="tablePropsWidth" width="400" colspan="2"><font
-    style="COLOR: black; FONT: 8pt/11pt verdana">The page you are looking for does not exist!</font></td>
-  </tr>
-  <tr>
-    <td id="xpnetdiagInfo" align="left" colspan="2" width="400" bordercolor="#FF0000" style="border-style:solid; border-width:2px; padding-left: 0px; padding-right: 8px; padding-top: 8px; padding-bottom: 8px">
-    <img id="xpnetdiagImg" SRC="err2.bmp"
-    width="48" height="48" align="left" hspace="8"><font style="COLOR: black; FONT: 8pt/11pt verdana">Error Code:</font> <img src="errcode.bmp" />
-    </td>
-  </tr>  
-  <tr>
-    <td id="tablePropsWidth" width="400" colspan="2"><font id="LID1"
-    style="COLOR: black; FONT: 8pt/11pt verdana"><br>
-    <p id="LID2">Other options to try:</p><ul>
-      <li id="instructionsText1">Click the 
-      <a xhref="javascript:location.reload()" target="_self">
-      <img border=0 src="ref.bmp" width="13" height="16"
-        alt="refresh.gif (82 bytes)" align="middle"></a> <a xhref="javascript:location.reload()" target="_self">Refresh</a> button, or try again later.<br>
-      </li>
-      
-      <li id="instructionsText2">If you typed the page address in the Address bar, make sure that
-        it is spelled correctly.<br>
-      </li>
-     <li id="list3">Click the <a href="javascript:history.back(1)"><img valign=bottom border=0 src="back.bmp"> Back</a> button to try another link. </li>    
-      
-      
-    </ul>
-    <p><br>
-    </p>
-    <h2 id="IEText" style="font:8pt/11pt verdana; color:black">Cannot find page.<BR> 404
-	
-    </h2>
-    </font></td>
-  </tr>
-</table>
+<body>
+	<center>
+	<hr></hr>
+    <h1 class="big-text">404!</h1>
+	<hr></hr>
+	<p>Oops!, Looks like the page at <insert_here id="url"></insert_here> does not exist!</p>
+	<br>
+	<p>Try checking if theres a typo in the url if you typed it.</p>
+	<br>
+	<p>Or another website redirected you to this broken link. In that case, <b>uhh i dont know</b></p>
+	</center>
+	<script>
+			var urii = document.getElementById('url');
+			urii.innerHTML=location.href;
+	</script>
 </body>
 </html>

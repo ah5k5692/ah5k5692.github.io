@@ -18,12 +18,132 @@
       <!-- END OF Meta tags and website title -->   
          <!-- Javascript stuff -->
          <script>
+		 /*
           // Security Warning
-		 console.error("%cDO NOT MESS WITH ANYTHING!", "background-color: red;color: white;font-size: 2em;");console.warn("%cYou could get hacked!", "background-color: yellow;color: red;font-size: 1.5em;");console.info("%cUsing Self-XSS or url-xss. You could get data stolen!", "background-color: blue;color: white;");console.log("%cOnly use this console if you know what you are doing!", "background-color: white;color: black;");
-          </script>
+		 //console.error("%cDO NOT MESS WITH ANYTHING!", "background-color: red;color: white;font-size: 2em;");console.warn("%cYou could get hacked!", "background-color: yellow;color: red;font-size: 1.5em;");console.info("%cUsing Self-XSS or url-xss. You could get data stolen!", "background-color: blue;color: white;");console.log("%cOnly use this console if you know what you are doing!", "background-color: white;color: black;");
+          */
+		  </script>
          <!-- End of Javascript stuff --> 
       <!-- Stylesheet imports -->
       <link rel="stylesheet" href="css/style.css">
+	  <style>body {
+				background-image: url('index.jpg');
+		 }
+		 h1 {
+			font-family: 'Lucida Console',monospace;
+			color: white;
+		}
+		
+		p  {
+			font-family: Arial, Helvetica, sans-serif;
+			color: white;
+		}
+		.content1 a {
+          color: #a3a2a2;
+         }
+         .content1 a:hover {
+          color: #969393;
+         }
+         .content2 a {
+          color: #a3a2a2;
+         }
+         .content2 a:hover {
+          color: #969393;
+         }
+		 .special {
+			color: rgb(86, 86, 255);
+			background-color: #9ebee8;
+			text-align: center;
+			font-size: 120%;
+		 }
+		 codebl {
+			word-wrap: break-word; white-space: pre-wrap;
+		 }
+         .skip-nav {
+          background-color: #1a366e;
+          color: #fff;
+          text-align: center;
+	  font-weight: 700;
+          left: 50%;
+          padding: 4px;
+          position: absolute;
+          transform: translateY(-100%);
+	  text-decoration: none;
+	  font-size: 17px;
+          }
+          .skip-nav:focus {
+          transform: translateY(0%);
+          }
+ 	.nav {
+	 background-color: #3c3a4d;
+	 overflow: hidden;
+	}
+	.nav a {
+	  float: left;
+	  color: #9ebee8;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 17px;
+	}
+	.nav a:hover {
+	   background-color: #b5e6e4;
+	   color: black;
+	}
+	.nav a.active {
+	   background-color: #0e4f6e;
+	   color: white;
+	}
+
+	.nav input[type=text] {
+	   float: right;
+	   padding: 6px;
+	   border: none;
+	   margin-top: 8px;
+	   margin-right: 16px;
+	   font-size: 17px;
+	}
+	.dropbtn {
+	  background-color: #46d4a7;
+	  float: left;
+	  color: white;
+	  text-align: center;
+	  //padding: 14px;
+	  text-decoration: none;
+	  font-size: 17px;
+	}
+
+	.dropdown {
+	 float: left;
+	 overflow: hidden;
+	}
+
+	.dropdown-content {
+  	display: none;
+  	position: absolute;
+  	background: linear-gradient(90deg, rgba(40,35,121,1) 0%, rgba(64,144,249,1) 100%);
+  	min-width: 160px;
+  	box-shadow: 0px 8px 16px 0px rgba(80, 78, 78, 0.2);
+  	z-index: 1;
+	}
+.dropdown-content a {
+	float: left;
+	color: #ffff;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+    .doncah {
+        color: rgb(146, 144, 144);
+    }
+    b {
+        color: white;
+    }
+	.dropdown:active .dropdown-content {
+  	display: block;
+	}
+		</style>
       <!-- END OF Stylesheet imports -->
      </head>
 <!-- Website layout and content -->
@@ -36,13 +156,12 @@
   <!-- Website navigation bar -->
 	<div class="nav">
 		<a class="active" href="/">Home</a>
-    <a class="active" href="index.dark.html">Switch to dark-mode!!</a>
 		<div class="dropdown">
     <button class="dropbtn">Awesome Dropdown Menu 🔽
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <b>-- Minecraft in a browser --</b>
+      <b>Hi there. there's literally nothing here.</b>
   </div>
 </div>
 </div>
@@ -56,23 +175,6 @@
   <main id="temp">
     <div class="posts-container"><a class="special" href="blog1.html">I'm making my own OS!!</a></div>
   </main>
-	<p>Comments!</p>
-  <script src="https://giscus.app/client.js"
-  data-repo="Abdulhadi5692HDI2/Abdulhadi5692HDI2.github.io"
-  data-repo-id="R_kgDOHzlAYA"
-  data-category="General"
-  data-category-id="DIC_kwDOHzlAYM4CU-r1"
-  data-mapping="pathname"
-  data-strict="0"
-  data-reactions-enabled="1"
-  data-emit-metadata="1"
-  data-input-position="top"
-  data-theme="light"
-  data-lang="en"
-  data-loading="lazy"
-  crossorigin="anonymous"
-  async>
-</script>
 
 </body>
 </html>
