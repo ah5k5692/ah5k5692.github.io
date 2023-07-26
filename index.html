@@ -27,46 +27,39 @@
 		<!-- End of Javascript stuff --> 
 		<!-- Stylesheet imports -->
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/taskbar.css">
+		<link rel="stylesheet" href="https://unpkg.com/xp.css" id="xp">
 		<style>
 		</style>
 		<!-- END OF Stylesheet imports -->
 	</head>
 	<!-- Website layout and content -->
 	<body>
-		<header>
-			<a class="skip-nav" href="#main" data-scroll-to="#main">
-			Skip to content
-			</a>
-		</header>
 		<!-- Website navigation bar -->
 		<div class="nav">
-			<a class="active" href="/">Home</a>
-			<div class="dropdown">
-				<button class="dropbtn">Awesome Dropdown Menu 🔽
-				<i class="fa fa-caret-down"></i>
-				</button>
-				<div class="dropdown-content">
-					<b>Hi there. there's literally nothing here.</b>
-				</div>
-			</div>
+			<h4 class="logo">Abdulhadi5692HDI2</h4>
+			<button onclick="location.replace('/');">Home</button>
+			<hr>
 		</div>
 		<!-- END OF Website navigation bar -->
 		<main class="content1" id="main">
-			<h1>Welcome! <a href="#main">$</a></h1>
-			<hr>
+			<h3 style="color: white;">Welcome! <a href="#main">$</a></h3>
 			<p>some spare text!!</p>
-			<p>See my <a href="bposts.html">Blog Posts</a></p>
+			<p>See my <button onclick='document.getElementById("close").style.visibility = "visible";'>Blog Posts</button></p>
+			<div class="window blog-posts" id="close" style="width: 300px;">
+				<div class="title-bar">
+					<div class="title-bar-text">Blog Posts</div>
+					<div class="title-bar-controls">
+						<button aria-label="Minimize" onclick="alert(`Cannot Minimize!!! No way to restore window afterwards!`);"></button>
+						<button onclick='document.getElementById("close").style.visibility = "hidden";' aria-label="Close"></button>
+					</div>
+				  </div>
+				<div class="window-body">
+					<h3>Blog Posts</h1>
+    				<div class="posts-container"><a href="/blogs/IMakOS.html">I'm making my own OS!!</a></div>
+				</div>
+			</div>
 		</main>
-		<p>Circle :)</p>
-		<P>
-			<canvas height="200" width="400" id="myCanvas"></canvas>
-		</P>
-		<script>
-			var canvas = document.getElementById("myCanvas");
-			var ctx = canvas.getContext("2d");
-			ctx.beginPath();
-			ctx.arc(95, 50, 40, 0, 2 * Math.PI);
-			ctx.stroke();
-		</script>
+		<iframe style="border-style: hidden;" class="taskbar" src="taskbar.html"></iframe>
 	</body>
 </html>
