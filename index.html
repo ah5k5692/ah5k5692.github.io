@@ -16,15 +16,7 @@
 		<meta name="language" content="English">
 		<meta name="author" content="@Abdulhadi5692HDI2">
 		<!-- END OF Meta tags and website title -->   
-		<!-- Javascript stuff -->
-		<script>
-			/*
-			       // Security Warning
-			//console.error("%cDO NOT MESS WITH ANYTHING!", "background-color: red;color: white;font-size: 2em;");console.warn("%cYou could get hacked!", "background-color: yellow;color: red;font-size: 1.5em;");console.info("%cUsing Self-XSS or url-xss. You could get data stolen!", "background-color: blue;color: white;");console.log("%cOnly use this console if you know what you are doing!", "background-color: white;color: black;");
-			       */
-			 
-		</script>
-		<!-- End of Javascript stuff --> 
+
 		<!-- Stylesheet imports -->
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/taskbar.css">
@@ -46,20 +38,59 @@
 			<h3 style="color: white;">Welcome! <a href="#main">$</a></h3>
 			<p>some spare text!!</p>
 			<p>See my <button onclick='document.getElementById("close").style.visibility = "visible";'>Blog Posts</button></p>
-			<div class="window blog-posts" id="close" style="width: 300px;">
-				<div class="title-bar">
+			<div class="window blog-posts" id="close" style="width: 640;height: 480;position: absolute;">
+				<div class="title-bar" id="closeheader">
 					<div class="title-bar-text">Blog Posts</div>
 					<div class="title-bar-controls">
 						<button aria-label="Minimize" onclick="alert(`Cannot Minimize!!! No way to restore window afterwards!`);"></button>
 						<button onclick='document.getElementById("close").style.visibility = "hidden";' aria-label="Close"></button>
 					</div>
 				  </div>
-				<div class="window-body">
-					<h3>Blog Posts</h1>
+				  <div class="window-body">
+					<h3>Blog Posts</h3>
     				<div class="posts-container"><a href="/blogs/IMakOS.html">I'm making my own OS!!</a></div>
 				</div>
 			</div>
 		</main>
-		<iframe style="border-style: hidden;" class="taskbar" src="taskbar.html"></iframe>
+		<iframe style="border-style: hidden;cursor: url('/img/cursors/normal-32x32.png'), auto;" class="taskbar" src="taskbar.html"></iframe>
+		<script>
+			dragElement(document.getElementById("close"));
+
+			function dragElement(elmnt) {
+				var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+				if (document.getElementById(elmnt.id + "header")) {
+					document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+				} else {
+					elmnt.onmousedown = dragMouseDown;
+				}
+
+			function dragMouseDown(e) {
+				e = e || window.event;
+				e.preventDefault();
+				pos3 = e.clientX;
+				pos4 = e.clientY;
+				document.onmouseup = closeDragElement;
+				document.onmousemove = elementDrag;
+			}
+
+			function elementDrag(e) {
+				e = e || window.event;
+				e.preventDefault();
+				pos1 = pos3 - e.clientX;
+				pos2 = pos4 - e.clientY;
+				pos3 = e.clientX;
+				pos4 = e.clientY;
+				elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+				elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+			}
+
+			function closeDragElement() {
+				// stop moving when mouse button is released:
+				document.onmouseup = null;
+				document.onmousemove = null;
+			}
+			}
+			 
+		</script>
 	</body>
 </html>

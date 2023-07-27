@@ -73,3 +73,7 @@ p
 #close {
    visibility: hidden;
 }
+.black
+{
+	color: black; /* That wasn't so hard was it! */
+}
