@@ -31,13 +31,14 @@
 		<div class="nav">
 			<h4 class="logo">Abdulhadi5692HDI2</h4>
 			<button onclick="location.replace('/');">Home</button>
+			<button onclick='document.getElementById("close").style.visibility = "visible";'>Blog Posts</button>
+			<button onclick='document.getElementById("close2").style.visibility = "visible";'>Tutorials</button>
 			<hr>
 		</div>
 		<!-- END OF Website navigation bar -->
 		<main class="content1" id="main">
 			<h3 style="color: white;">Welcome! <a href="#main">$</a></h3>
 			<p>some spare text!!</p>
-			<p>See my <button onclick='document.getElementById("close").style.visibility = "visible";'>Blog Posts</button></p>
 			<div class="window blog-posts" id="close" style="width: 640;height: 480;position: absolute;">
 				<div class="title-bar" id="closeheader">
 					<div class="title-bar-text">Blog Posts</div>
@@ -51,10 +52,24 @@
     				<div class="posts-container"><a href="/blogs/IMakOS.html">I'm making my own OS!!</a></div>
 				</div>
 			</div>
+			<div class="window blog-posts" id="close2" style="width: 640;height: 480;position: absolute;">
+				<div class="title-bar" id="close2header">
+					<div class="title-bar-text">Tutorials</div>
+					<div class="title-bar-controls">
+						<button aria-label="Minimize" onclick="alert(`Cannot Minimize!!! No way to restore window afterwards!`);"></button>
+						<button onclick='document.getElementById("close2").style.visibility = "hidden";' aria-label="Close"></button>
+					</div>
+				  </div>
+				  <div class="window-body">
+					<h3>Tutorials i've made</h3>
+    				<a href="https://github.com/Abdulhadi5692HDI2/sbstut">Batch Script tutorial</a>
+				</div>
+			</div>
 		</main>
 		<iframe style="border-style: hidden;cursor: url('/img/cursors/normal-32x32.png'), auto;" class="taskbar" src="taskbar.html"></iframe>
 		<script>
 			dragElement(document.getElementById("close"));
+			dragElement(document.getElementById("close2"));
 
 			function dragElement(elmnt) {
 				var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;

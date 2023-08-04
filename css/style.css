@@ -73,6 +73,9 @@ p
 #close {
    visibility: hidden;
 }
+#close2 {
+	visibility: hidden;
+ }
 .black
 {
 	color: black; /* That wasn't so hard was it! */
