@@ -7,16 +7,6 @@
     height: 30px;
   }
 .start{
-    height: 100%;
-    color: white;
-    font-weight: bold;
-    font-size: 1.1rem;
-    font-style: italic;
-    border: none;
-    border-radius: 0px 10px 12px 0px;
-    box-shadow: 0px 5px 10px #79ce71 inset;
-    background: radial-gradient(circle, #5eac56 0%, #3c873c 100%) center/cover no-repeat;
-    
-    display: flex;
-    align-items:center;
+    height: 23;
+    width:  75;
 }
