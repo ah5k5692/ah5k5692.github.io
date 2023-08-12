@@ -8,5 +8,11 @@
   }
 
 .start {
-  background-image: url("/img/taskbar/start/tile000.gif");
+  content: url("/img/taskbar/start/tile000.gif");
+}
+.start:hover {
+  content: url("/img/taskbar/start/tile001.gif");
+}
+.start:active {
+  content: url("/img/taskbar/start/tile002.gif");
 }
