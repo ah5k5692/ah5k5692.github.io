@@ -6,3 +6,7 @@
     left:  -1px;
     height: 30px;
   }
+
+.start {
+  background-image: url("/img/taskbar/start/tile000.gif");
+}
