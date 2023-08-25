@@ -17,11 +17,7 @@ body
 	background-image: url('/img/index.jpg');
 }
 
-.logo
-{
-	font-family: 'Lucida Console',monospace;
-	color: white;
-}
+
 
 p
 {
@@ -56,6 +52,8 @@ p
 .logo {
    display: inline-flex;
    vertical-align: middle;
+   font-family: 'Lucida Console',monospace;
+   color: white;
 }
 .nav a
 {
