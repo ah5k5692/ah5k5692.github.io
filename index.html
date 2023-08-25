@@ -16,13 +16,8 @@
 		<meta name="language" content="English">
 		<meta name="author" content="@Abdulhadi5692HDI2">
 		<!-- END OF Meta tags and website title -->   
-
 		<!-- Stylesheet imports -->
 		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/taskbar.css">
-		<link rel="stylesheet" href="https://unpkg.com/xp.css" id="xp">
-		<style>
-		</style>
 		<!-- END OF Stylesheet imports -->
 	</head>
 	<!-- Website layout and content -->
@@ -31,81 +26,11 @@
 		<div class="nav">
 			<h4 class="logo">Abdulhadi5692HDI2</h4>
 			<button onclick="location.replace('/');">Home</button>
-			<button onclick='document.getElementById("close").style.visibility = "visible";'>Blog Posts</button>
-			<button onclick='document.getElementById("close2").style.visibility = "visible";'>Tutorials</button>
 			<hr>
 		</div>
 		<!-- END OF Website navigation bar -->
 		<main class="content1" id="main">
 			<h3 style="color: white;">Welcome! <a href="#main">$</a></h3>
 			<p>some spare text!!</p>
-			<div class="window blog-posts" id="close" style="width: 640;height: 480;position: absolute;">
-				<div class="title-bar" id="closeheader">
-					<div class="title-bar-text">Blog Posts</div>
-					<div class="title-bar-controls">
-						<button aria-label="Minimize" onclick="alert(`Cannot Minimize!!! No way to restore window afterwards!`);"></button>
-						<button onclick='document.getElementById("close").style.visibility = "hidden";' aria-label="Close"></button>
-					</div>
-				  </div>
-				  <div class="window-body">
-					<h3>Blog Posts</h3>
-    				<div class="posts-container"><a href="/blogs/IMakOS.html">I'm making my own OS!!</a></div>
-				</div>
-			</div>
-			<div class="window blog-posts" id="close2" style="width: 640;height: 480;position: absolute;">
-				<div class="title-bar" id="close2header">
-					<div class="title-bar-text">Tutorials</div>
-					<div class="title-bar-controls">
-						<button aria-label="Minimize" onclick="alert(`Cannot Minimize!!! No way to restore window afterwards!`);"></button>
-						<button onclick='document.getElementById("close2").style.visibility = "hidden";' aria-label="Close"></button>
-					</div>
-				  </div>
-				  <div class="window-body">
-					<h3>Tutorials i've made</h3>
-    				<a href="https://github.com/Abdulhadi5692HDI2/sbstut">Batch Script tutorial</a>
-				</div>
-			</div>
-		</main>
-		<iframe style="border-style: hidden;" class="taskbar" src="taskbar.html"></iframe>
-		<script>
-			dragElement(document.getElementById("close"));
-			dragElement(document.getElementById("close2"));
-
-			function dragElement(elmnt) {
-				var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-				if (document.getElementById(elmnt.id + "header")) {
-					document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-				} else {
-					elmnt.onmousedown = dragMouseDown;
-				}
-
-			function dragMouseDown(e) {
-				e = e || window.event;
-				e.preventDefault();
-				pos3 = e.clientX;
-				pos4 = e.clientY;
-				document.onmouseup = closeDragElement;
-				document.onmousemove = elementDrag;
-			}
-
-			function elementDrag(e) {
-				e = e || window.event;
-				e.preventDefault();
-				pos1 = pos3 - e.clientX;
-				pos2 = pos4 - e.clientY;
-				pos3 = e.clientX;
-				pos4 = e.clientY;
-				elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-				elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-			}
-
-			function closeDragElement() {
-				// stop moving when mouse button is released:
-				document.onmouseup = null;
-				document.onmousemove = null;
-			}
-			}
-			 
-		</script>
 	</body>
 </html>
