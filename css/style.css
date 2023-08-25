@@ -17,8 +17,9 @@ body
 	background-image: url('/img/index.jpg');
 }
 
-
-
+h1{
+	font-family: Arial, Helvetica, sans-serif;
+}
 p
 {
 	font-family: Arial, Helvetica, sans-serif;
