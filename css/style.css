@@ -17,9 +17,7 @@ body
 	background-image: url('/img/index.jpg');
 }
 
-h1{
-	font-family: Arial, Helvetica, sans-serif;
-}
+
 p
 {
 	font-family: Arial, Helvetica, sans-serif;
@@ -36,14 +34,18 @@ p
 	color: #969393;
 }
 
-.content2 a
+.something
 {
-	color: #a3a2a2;
+	display: none;
 }
 
-.content2 a:hover
+h1
 {
-	color: #969393;
+	font-family: Arial, Helvetica, sans-serif;
+}
+h1:hover .something
+{
+	display: inherit;
 }
 .nav
 {
