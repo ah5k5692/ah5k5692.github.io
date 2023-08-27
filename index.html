@@ -3,7 +3,7 @@
 	This code is licensed under MIT!
 	Copyright (c) Abdulhadi5692HDI2 2022
 	-->
-<html>
+<html lang="en" data-bs-theme="dark">
 	<head>
 		<!-- Meta tags and website title [tab title] -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -17,24 +17,41 @@
 		<meta name="author" content="@Abdulhadi5692HDI2">
 		<!-- END OF Meta tags and website title -->   
 		<!-- Stylesheet imports -->
-		<link rel="stylesheet" href="css/style.css">
+
+			<link rel="stylesheet" href="css/style.css">
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 		<!-- END OF Stylesheet imports -->
+		<!-- Javascript imports -->
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+		<!-- END OF Javascript imports -->
 	</head>
 	<!-- Website layout and content -->
 	<body>
 		<!-- Website navigation bar -->
-		<div class="nav">
-			<h1 class="logo">Abdulhadi5692HDI2</h1>
-			<button onclick="location.replace('/');">Home</button>
-			<hr>
-		</div>
+		<nav class="navbar navbar-expand-sm "> <!-- bg-dark -->
+
+			<div class="container-fluid">
+			<!-- Links -->
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<h2>Abdulhadi5692HDI2</h2>
+				</li>
+                                          
+				<li class="nav-item">
+					<button type="button" onclick="location.replace('/');" class="btn nav-link btn-success">Home</button>
+				</li>
+			</ul>
+			</div>
+		</nav> 
+		<hr>
 		<!-- END OF Website navigation bar -->
-		<main class="content1" id="main">
-			<h1 style="color: white;">Welcome! <a class="something" href="#main">¶</a></h1>
+		<div class="container-fluid">
+			<h1 style="color: white;">Welcome!</h1>
 			<p>Hi there!
 				You've landed here in my lonely little corner.<br>
 				There isn't much yet as im still working on it.<br>
 				Thanks for checking out my little corner.<br>
 			</p>
+		</div>
 	</body>
 </html>
