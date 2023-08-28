@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .background-image {
+            position: fixed;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            display: block;
+            background-image: url("/img/bg2.jpg");
+            width: 1200px;
+            height: 800px;
+            -webkit-filter: blur(5px);
+            -moz-filter: blur(5px);
+            -o-filter: blur(5px);
+            -ms-filter: blur(5px);
+            filter: blur(5px);
+        }
+        .container-fluid {
+            position: fixed;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            margin-left: 20px;
+            margin-right: 20px;
+            z-index: 9999;
+            
+        }
+        iframe {
+            padding: 1rem;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="background-image"></div>
+        <div class="container-fluid">
+            <h1 style="color: #53c9f8ab;">"Latest" Videos</h1>
+            <div>
+            <iframe class="latestVideoEmbed" vnum='0' width="333" height="187" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+            <div>
+            <iframe class="latestVideoEmbed" vnum='1' width="333" height="187" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+            <div>
+            <iframe class="latestVideoEmbed" vnum='2' width="333" height="187" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+<script src="videolist.js"></script>
+</body>
+</html>
