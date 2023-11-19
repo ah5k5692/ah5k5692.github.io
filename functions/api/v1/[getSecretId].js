@@ -1,7 +1,10 @@
 export function getSecretId(ctx, id) {
-    var val = id;
     if (id == null) {
-        val = ctx.params.getSecretId;
+        val = ctx.params.secret;
+    } else if (ctx == null) {
+        var val = id;
+    } else {
+        return ("both args null");
     }
     switch (val) {
         case '1': {
