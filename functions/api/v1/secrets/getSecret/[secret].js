@@ -1,13 +1,13 @@
 export function onRequest(ctx) {
     switch (ctx.params.secret) {
         case '1': {
-            return ("Hello this is a test note. Thanks for read bye bye!");
+            return new Response("Hello this is a test note. Thanks for read bye bye!");
         }
         case '2': {
-            return ("saturday or sunday?");
+            return new Response("saturday or sunday?");
         }
         default: {
-            return ("Secret with ID: " + val + " doesn't exist!");
+            return new Response("Secret with ID: " + val + " doesn't exist!");
         }
     }
 }
