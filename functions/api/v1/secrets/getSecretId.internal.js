@@ -1,4 +1,5 @@
 export function getSecretId(val) {
+    let val = val;
     switch (val) {
         case '1': {
             return ("Hello this is a test note. Thanks for read bye bye!");
