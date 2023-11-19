@@ -1,5 +1,9 @@
-export function getSecretId(id) {
-    switch (id) {
+export function getSecretId(ctx, id) {
+    var val = id;
+    if (id == null) {
+        val = ctx.params;
+    }
+    switch (val) {
         case '1': {
             return ("Hello this is a test note. Thanks for read bye bye!");
         }
