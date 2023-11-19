@@ -6,5 +6,5 @@ export function onRequest(ctx) {
     for (let i = 1;i < countSecrets(); i++) {
         secrets[i] = {id: i, data: getSecretId(i)};
     }
-    return JSON.stringify(secrets);
+    return new Response(JSON.stringify(secrets));
 }
