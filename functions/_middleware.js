@@ -62,6 +62,8 @@ export const onRequest = pagesPluginStaticForms({
         htmlTemplate2 = `</p>
         </body>
         </html>`;
-        return new Response(htmlTemplate1 + name + "! I hope you are having a great day!" + htmlTemplate2, {type: "text/html"});
+        return new Response(htmlTemplate1 + name + "! I hope you are having a great day!" + htmlTemplate2, {headers: {
+            "Content-Type": "text/html",
+    }});
     }
 });
