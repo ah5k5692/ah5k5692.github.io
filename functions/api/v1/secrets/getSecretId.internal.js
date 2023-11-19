@@ -1,3 +1,5 @@
+const SECRET_COUNT = 2;
+
 export function getSecretId(val) {
     switch (val) {
         case '1': {
@@ -10,4 +12,8 @@ export function getSecretId(val) {
             return ("Secret with ID: " + val + " doesn't exist!");
         }
     }
+}
+
+export function countSecrets() {
+    return SECRET_COUNT;
 }
