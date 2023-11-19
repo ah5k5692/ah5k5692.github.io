@@ -1,8 +1,67 @@
 import pagesPluginStaticForms from "@cloudflare/pages-plugin-static-forms";
 
+htmlTemplate1 = `<!DOCTYPE html>
+<!-- 
+	This code is licensed under MIT!
+	Copyright (c) Abdulhadi5692HDI2 2022
+	-->
+<html lang="en" data-bs-theme="dark">
+	<head>
+		<!-- Meta tags and website title [tab title] -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Abdulhadi5692HDI2's blog!</title>
+		<meta name="title" content="Abdulhadi5692HDI2's website/blog">
+		<meta name="description" content="Hi! You probally landed on my site. Ok you can explore!Im done talking. . .">
+		<meta name="keywords" content="useless, mine">
+		<meta name="robots" content="index, follow">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="language" content="English">
+		<meta name="author" content="@Abdulhadi5692HDI2">
+		<!-- END OF Meta tags and website title -->   
+		<!-- Stylesheet imports -->
+
+			<link rel="stylesheet" href="css/style.css">
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+		<!-- END OF Stylesheet imports -->
+		<!-- Javascript imports -->
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+		<!-- END OF Javascript imports -->
+	</head>
+	<!-- Website layout and content -->
+	<body>
+		<div class="background-image"></div>
+		<!-- Website navigation bar -->
+		<nav class="navbar navbar-expand-sm" style="padding: 2.1rem;"> <!-- bg-dark -->
+
+			<div class="container-fluid">
+			<!-- Links -->
+			<ul class="navbar-nav">
+
+				<h2>Abdulhadi5692HDI2&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</h2> 
+				                 
+				<li class="nav-item">
+					<!--<div class="btn-group"> -->
+						<button type="button" onclick="location.replace('/');" class="btn btn-dark"><img src="img/home.png" width="32" height="32"/> Home</button>
+						&NonBreakingSpace;&NonBreakingSpace;
+						<button type="button" onclick="location.replace('/about.html');" class="btn btn-dark"><img src="img/person.png" width="32" height="32"/>About</button>
+					<!--</div> -->
+				</li>
+			</ul>
+			</div>
+		</nav> 
+		<hr>
+		<!-- END OF Website navigation bar -->
+		<div class="container-fluid">
+			<h1>Cheer me up! :D</h1>
+            <p>Hello 
+`;
+htmlTemplate2 = `</p>
+</body>
+</html>`;
+
 export const onRequest = pagesPluginStaticForms({
     respondWith: ({formData, name}) => {
         name = formData.get('name');
-        return new Response("Hello " + name + "! I hope you are having a great day!");
+        return new Response(htmlTemplate1 + name + "! I hope you are having a great day!" + htmlTemplate2);
     }
 });
