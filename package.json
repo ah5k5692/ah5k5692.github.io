@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@cloudflare/pages-plugin-static-forms": "^1.0.1",
+    "wrangler": "^3.16.0"
+  }
+}
